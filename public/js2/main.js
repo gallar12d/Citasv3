@@ -1,4 +1,5 @@
 $(function () {
+     $.cookie('menu_style', 'sidebar-collapsed');
     //BEGIN MENU SIDEBAR
     $('#sidebar').css('min-height', '100%');
     $('#side-menu').metisMenu();

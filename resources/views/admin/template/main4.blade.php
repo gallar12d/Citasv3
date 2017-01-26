@@ -583,11 +583,12 @@
                                 <option value="style2">Flat Rounded style</option>
                                 <option value="style3">Flat Border style</option>
                             </select></li>
-                            <li><h4 class="mtn">Menu Styles</h4><select id="list-menu" class="form-control">
-                                <option value="sidebar-default">Menu style 1</option>
-                                <option value="sidebar-colors">Menu style 2</option>
-                                <option value="sidebar-icons">Menu style 3</option>
-                                <option value="sidebar-collapsed">Menu style 4</option>
+                            <li><h4 class="mtn">Menu Styles</h4>
+                            <select id="list-menu" class="form-control">
+                                <option value="sidebar-collapsed">Menu style 1</option>
+                                <option value="sidebar-collapsed">Menu style 2</option>
+                                <option value="sidebar-collapsed">Menu style 3</option>
+                                <option selected value="sidebar-collapsed">Menu style 4</option>
                             </select></li>
                             <li><h4 class="mtn">Header & Sidebar</h4><select id="list-header" class="form-control">
                                 <option value="header-static">Static</option>
@@ -668,7 +669,7 @@
     <!--END TOPBAR-->
     <div id="wrapper"><!--BEGIN SIDEBAR MENU-->
         <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
-            <div class="sidebar-collapse menu-scroll">
+            <div class="sidebar-collapse menu-scroll collapse">
                 <ul id="side-menu" class="nav">
                     <li class="user-panel">
                         <div class="thumb"><img src="{{ asset('images/hospital.png') }}"
