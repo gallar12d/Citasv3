@@ -26,7 +26,8 @@
       </div>
 
           <a class="btn btn-primary" href="lista"><i class="fa  fa-calendar-check-o" aria-hidden="true"></i> Agendar una Cita</a>
-          <a class="btn btn-primary" href="Horarioreserva"><i class="fa  fa-calendar-check-o" aria-hidden="true"></i> Ver las Reservas</a>
+          <a class="btn btn-primary" href="todasReservas"><i class="fa  fa-calendar-check-o" aria-hidden="true"></i> Ver Todas las Reservas</a>
+           <a class="btn btn-primary" href="Horarioreserva"><i class="fa  fa-calendar-check-o" aria-hidden="true"></i> Ver las próximas Reservas</a>
           <button class="btn btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-calendar"></i> Crear un horario de citas</button>
       </div>
     </div>

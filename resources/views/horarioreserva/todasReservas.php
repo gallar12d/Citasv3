@@ -14,8 +14,9 @@ use App\Horario;
         <!-- <a class="btn btn-primary btn-flat" href="{!! route('especialidades.create') !!}">Crear Nueva Especialidad</a> -->
             <br>
             <br>
-            <div class="panel panel-blue">
-             <div class="panel-heading">Próximas reservas</div>
+            
+    <div class="panel panel-blue">
+             <div class="panel-heading">Todas las reservas</div>
               <div class="panel-body">
                <div id="no-more-tables">
                  <table id="table_id" class="table table-hover table-striped table-bordered table-advanced tablesorter display">
@@ -28,7 +29,7 @@ use App\Horario;
 
                 </thead>
                 <tbody>
-                    @foreach($reservas as $value)
+                    @foreach($reservast as $valuet)
                     <?php 
                         $horarios = Horario::where('id','=', $value->idhorario)->get();
                      ?>
@@ -39,9 +40,9 @@ use App\Horario;
                    
                     
                     <tr>
-                        <td>{{$value->identificacion}}</td>
-                        <td>{{$value->nombres}} {{$value->apellidos}}</td>
-                         <td>{{$value->fechareserva}} - {{$value->diasemana}} - {{$value->horareserva}}</td>
+                        <td>{{$valuet->identificacion}}</td>
+                        <td>{{$valuet->nombres}} {{$valuet->apellidos}}</td>
+                         <td>{{$valuet->fechareserva}} - {{$valuet->diasemana}} - {{$valuet->horareserva}}</td>
                             <td> {{$h->nombre}}</td>
                              <td> {{$h->tipoatencion}}</td>
                      <!--    <td align="center">
@@ -63,8 +64,6 @@ use App\Horario;
         </div>
     </div>
     </div>
-    <br>
-
     </div>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class = 'AjaxisModal'>

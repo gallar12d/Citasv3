@@ -84,6 +84,9 @@ Route::get('medico/api/v13/medico/obtenermunic',
 
 Route::get('/Horarioreserva',
 'HorarioreservaController@index');
+Route::get('/todasReservas',
+'HorarioreservaController@todasReservas');
+
 Route::post('/api/v13/reservas/deletereserva',
 'HorarioreservaController@deleteReserva');
 Route::get('/lista','AgendadoctorController@lista');

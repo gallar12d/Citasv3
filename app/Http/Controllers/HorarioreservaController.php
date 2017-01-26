@@ -26,11 +26,16 @@ class HorarioreservaController extends Controller
      */
     public function index()
     {
-        //
-         $reservas = HorarioReserva::where('estado','=','activo')->orderBy('fechareserva')->get();
+     $hoy = date("y-m-d"); 
+         $reservas = HorarioReserva::where('estado','=','activo')->whereRaw('fechareserva >= CURDATE()')->orderBy('fechareserva')->get();
+                
+
           
             return view('horarioreserva.index', compact('reservas'));
     }
+
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -220,5 +225,15 @@ class HorarioreservaController extends Controller
 
           
       //   echo $request;
+    }
+
+           public function todasReservas()
+    {
+     // $hoy = date("y-m-d"); 
+         
+        $reservas = HorarioReserva::where('estado','=','activo')->orderBy('fechareserva')->get();
+
+          
+            return view('horarioreserva.index', compact('reservas'));
     }
 }
