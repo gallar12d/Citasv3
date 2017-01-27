@@ -76,7 +76,7 @@
 <select id="tipoAtencion" name="tipoAtencion" data-style="btn-primary" class="form-control">
     <option>Materno</option>  
     <option>General</option> 
-    <option>Urgencias</option>   
+    <option>Morbilidad</option>   
 </select>
 
 <div class="clearfix"></div>

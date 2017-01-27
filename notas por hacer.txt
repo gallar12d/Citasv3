@@ -1,0 +1,5 @@
+bara borrar reservas multiples, si le doy a la x 
+me arme un arreglo, y si le vuelvo a dar a la otra x me vuelve a armar otro arreglo
+mientras le de x me arme los arreglos necesarios
+guando le de guardar me envie ese arreglo multi dimemcional al php para
+en un for recorrerlo e ir haciendo el update borrado en cada registro
